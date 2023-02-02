@@ -7,8 +7,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
-/* NAV */
+/* INDEX */
+/* Navbar */
 
 body > nav.topNav {
   background-color: antiquewhite;
@@ -40,7 +40,15 @@ body > nav > button.sign-in {
   width: 64px;
 }
 
-/* MAIN */
+.navbar > .container-fluid {
+  background-color: white;
+}
+
+.navbar-toggler {
+  display: flex;
+}
+
+/* header */
 header {
   padding: 32px;
   display: flex;
@@ -77,13 +85,13 @@ header > .img-container > img {
   height: auto;
 }
 
-/* SECTION 1 */
+/* Index- section 1 */
 .section-one {
   padding: 32px;
   display: flex;
   flex-direction: column;
   row-gap: 16px;
-  background: pink;
+  /* background: pink; */
 }
 .section-one > h2 {
   line-height: 32px;
@@ -93,7 +101,6 @@ header > .img-container > img {
 .section-one > .three-items {
   display: flex;
   column-gap: 32px;
-  background: yellow;
 }
 
 .section-one > .three-items > .item-one {
@@ -101,7 +108,7 @@ header > .img-container > img {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
-  background: grey;
+  /* background: grey; */
   align-items: center;
 }
 
@@ -134,7 +141,7 @@ header > .img-container > img {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
-  background: grey;
+  /* background: grey; */
   align-items: center;
 }
 
@@ -167,7 +174,7 @@ header > .img-container > img {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
-  background: grey;
+  /* background: grey; */
   align-items: center;
 }
 
@@ -195,7 +202,7 @@ header > .img-container > img {
   text-align: center;
 }
 
-/* SECTION 2 */
+/* Index- section 2 */
 .section-two {
   padding: 32px;
   display: flex;
@@ -224,13 +231,13 @@ header > .img-container > img {
   height: auto;
 }
 
-/* SECTION 3 */
+/* Index- section 3 */
 .section-three {
   padding: 32px;
   display: flex;
   flex-direction: column;
   row-gap: 16px;
-  background: pink;
+  background: #edede9;
 }
 .section-three > h2 {
   line-height: 32px;
@@ -239,15 +246,17 @@ header > .img-container > img {
 .section-three > .three-items {
   display: flex;
   column-gap: 32px;
-  background: yellow;
+  /* background: yellow; */
 }
 .section-three > .three-items > .item-one {
   padding: 32px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-  background: grey;
+  /* background: grey; */
   align-items: center;
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
 }
 .section-three > .three-items > .item-one > .text-container {
   display: flex;
@@ -259,11 +268,13 @@ header > .img-container > img {
 
 .section-three > .three-items > .item-two {
   padding: 32px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-  background: grey;
+  /* background: grey; */
   align-items: center;
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
 }
 .section-three > .three-items > .item-two > .text-container {
   display: flex;
@@ -275,11 +286,13 @@ header > .img-container > img {
 
 .section-three > .three-items > .item-three {
   padding: 32px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-  background: grey;
+  /* background: grey; */
   align-items: center;
+  text-align: center;
+  border-color: black;
+  border-style: solid;
+  border-radius: 8px;
+  border-width: 1px;
 }
 .section-three > .three-items > .item-three > .text-container {
   display: flex;
@@ -289,24 +302,40 @@ header > .img-container > img {
   align-items: center;
 }
 
-/* FOOTER */
+/* Index- Footer */
 footer {
   padding: 32px;
   background: lightgray;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 footer > .footer-links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width: 768px) {
+  footer > .footer-links {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
 footer > .footer-links > .link-container {
   row-gap: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 footer > .footer-links > .link-container > h3 {
   line-height: 24px;
 }
-/* footer > div.links > div.link-container > ul {
-} */
+footer > .footer-links > .link-container > .logo-footer {
+  height: 24px;
+}
+footer > div.footer-links > div.link-container > ul {
+  padding: 0;
+}
 footer > .footer-links > .link-container > ul > li {
   list-style: none;
 }
@@ -314,18 +343,29 @@ footer > .footer-links > .link-container > ul > li > a {
   text-decoration: none;
   color: inherit;
 }
+
+footer > .footer-links > .link-container > div.img-container > img.logo-footer {
+  object-fit: contain;
+  width: 100%;
+}
 footer > .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 12px;
-  padding: 40px 32px;
+}
+footer > .copyright > p {
+  margin: 0;
 }
 
 /* HOW IT WORKS */
 
+/* How it works- Section 1 */
+
+/* How it works- Section 2-3 */
 .how-section {
   padding: 32px;
+  margin: 32px 0px 32px 0px;
   display: flex;
   align-items: flex-start;
   column-gap: 32px;
@@ -359,4 +399,59 @@ footer > .copyright {
 .how-section > .img-container > img {
   width: 100%;
   height: auto;
+}
+
+/* SUBSCRIPTION */
+
+/* Subscription- Section 1 */
+.main-text-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 32px;
+  align-items: center;
+  text-align: center;
+}
+.main-text-box > h1 {
+  font-size: 32px;
+}
+.main-text-box > h2 {
+  font-size: 24px;
+}
+
+/* Subscription- Cards */
+
+.card-group {
+  display: flex;
+  column-gap: 32px;
+  row-gap: 32px;
+  padding: 32px;
+}
+
+.card-group > .col-xl-3 .col-md-6 .col-sm-12 {
+  padding: 32px;
+  background: gray;
+  display: flex;
+}
+
+.card-group > .col-xl-3 > img {
+  border-radius: 8px 8px 0px 0px;
+}
+
+.card-group > .col-xl-3 > .card-body {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+  padding: 16px;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.card-group > .col-xl-3 > .card-body > .card-text {
+  text-align: left;
+}
+
+.card-group > .col-xl-3 > .card-body > .btn {
+  align-items: right;
+  height: fit-content;
 }
