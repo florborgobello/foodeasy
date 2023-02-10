@@ -1,0 +1,39 @@
+/* Navbar */
+
+body > nav.topNav {
+  background-color: antiquewhite;
+  padding: 32px;
+  display: flex;
+  flex-direction: row;
+}
+body > nav.topNav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: red;
+  width: 100%;
+}
+
+body > nav.topNav > ul > li {
+  list-style: none;
+  border-style: solid;
+}
+body > nav.topNav > ul > li > a {
+  text-decoration: none;
+}
+
+body > nav > button.sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: green;
+  width: 64px;
+}
+
+.navbar > .container-fluid {
+  background-color: white;
+}
+
+.navbar-toggler {
+  display: flex;
+}
