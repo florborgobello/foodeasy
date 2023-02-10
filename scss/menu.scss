@@ -1,0 +1,59 @@
+/* Subscription- Cards */
+.main-text-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 32px;
+  align-items: center;
+  text-align: center;
+
+  > h1 {
+    font-size: 32px;
+  }
+  > h2 {
+    font-size: 24px;
+  }
+}
+.row p-6 {
+  display: flex;
+  column-gap: 12px;
+  row-gap: 12px;
+  padding: 32px;
+  background-color: red;
+
+  > .col-xs-12 {
+    .col-col-md-6 {
+      .col-sxl-13 {
+        padding: 32px;
+        display: flex;
+
+        > img .card-img-top {
+          border-radius: 8px 8px 0px 0px;
+        }
+        > .card-body {
+          display: flex;
+          flex-direction: row;
+          column-gap: 16px;
+          padding: 16px;
+          border-radius: 0px 0px 8px 8px;
+
+          > .card-text {
+            text-align: left;
+
+            h5 {
+              @include typography-subtitleTwo;
+              text-align: center;
+            }
+            p {
+              @include typography-body;
+            }
+          }
+          > .btn {
+            align-items: right;
+            height: fit-content;
+          }
+        }
+      }
+    }
+  }
+}

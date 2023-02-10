@@ -1,0 +1,49 @@
+// .b-section
+
+.b-section {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+
+  > h2 {
+    @include typography-title;
+    text-align: center;
+  }
+  > .three-items {
+    display: flex;
+    column-gap: 32px;
+
+    > .item-one {
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+      align-items: center;
+
+      > .img-container {
+        width: 50%;
+        > img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      > .text-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 8px;
+        width: 100%;
+        align-items: center;
+
+        > h3 {
+          @include typography-subtitleTwo;
+          text-align: center;
+        }
+        > p {
+          @include typography-body;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

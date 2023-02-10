@@ -22,7 +22,7 @@ footer > .footer-links > .link-container {
   width: 100%;
 }
 footer > .footer-links > .link-container > h3 {
-  line-height: 24px;
+  @include typography-body;
 }
 footer > .footer-links > .link-container > .logo-footer {
   height: 24px;
@@ -34,6 +34,8 @@ footer > .footer-links > .link-container > ul > li {
   list-style: none;
 }
 footer > .footer-links > .link-container > ul > li > a {
+  @include typography-auxiliar;
+  text-align: center;
   text-decoration: none;
   color: inherit;
 }
@@ -49,5 +51,7 @@ footer > .copyright {
   font-size: 12px;
 }
 footer > .copyright > p {
+  @include typography-auxiliar;
+  text-align: center;
   margin: 0;
 }

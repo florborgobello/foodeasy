@@ -5,8 +5,8 @@
   row-gap: 16px;
   background: #edede9;
 }
-.section-three > h2 {
-  line-height: 32px;
+.section-three > h1 {
+  @include typography-title;
   text-align: center;
 }
 .section-three > .three-items {
