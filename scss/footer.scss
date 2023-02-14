@@ -1,57 +1,68 @@
+$color_1: inherit;
+
 footer {
   padding: 32px;
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
-}
-footer > .footer-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-@media (max-width: 768px) {
-  footer > .footer-links {
-    flex-direction: column;
-    row-gap: 1rem;
+
+  > .footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    > .link-container {
+      row-gap: 16px;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      > .logo-footer {
+        height: 24px;
+      }
+      > ul {
+        > li {
+          list-style: none;
+          > a {
+            @include typography-auxiliar;
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+          }
+        }
+      }
+      > div.img-container {
+        > img.logo-footer {
+          object-fit: contain;
+          width: 100%;
+        }
+      }
+    }
+  }
+  > div.footer-links {
+    > div.link-container {
+      > ul {
+        padding: 0;
+      }
+    }
+  }
+  > .copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    > p {
+      @include typography-auxiliar;
+      text-align: center;
+      margin: 0;
+    }
   }
 }
-footer > .footer-links > .link-container {
-  row-gap: 16px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-footer > .footer-links > .link-container > h3 {
-  @include typography-body;
-}
-footer > .footer-links > .link-container > .logo-footer {
-  height: 24px;
-}
-footer > div.footer-links > div.link-container > ul {
-  padding: 0;
-}
-footer > .footer-links > .link-container > ul > li {
-  list-style: none;
-}
-footer > .footer-links > .link-container > ul > li > a {
-  @include typography-auxiliar;
-  text-align: center;
-  text-decoration: none;
-  color: inherit;
-}
-
-footer > .footer-links > .link-container > div.img-container > img.logo-footer {
-  object-fit: contain;
-  width: 100%;
-}
-footer > .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 12px;
-}
-footer > .copyright > p {
-  @include typography-auxiliar;
-  text-align: center;
-  margin: 0;
+@media (max-width: 768px) {
+  footer {
+    > .footer-links {
+      flex-direction: column;
+      row-gap: 1rem;
+    }
+  }
 }
