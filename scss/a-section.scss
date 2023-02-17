@@ -1,5 +1,4 @@
-// HEADER
-
+// A SECTION- General
 .a-section {
   display: flex;
   flex-direction: row;
@@ -21,21 +20,10 @@
       @include typography-body;
     }
     .cta {
-      $btn-bg-color: #ccd5ae;
-      $btn-text-color: #282828;
-      background-color: $btn-bg-color;
-      color: $btn-text-color;
-      border-color: darken($btn-bg-color, 5%);
-      &:hover {
-        background-color: darken($btn-bg-color, 5%);
-      }
-      &:focus {
-        background-color: darken($btn-bg-color, 10%);
-        color: $btn-text-color;
-        border-color: darken($btn-bg-color, 5%);
-      }
+      @include cta-button;
     }
-    // how it works
+
+    // How it works- A section
 
     > ul.text-container-list {
       padding: 0;
@@ -51,6 +39,8 @@
       }
     }
   }
+  // Home- A section- company
+
   .img-container {
     width: 50%;
     img {
@@ -64,5 +54,11 @@
   .a-section {
     flex-direction: column;
     row-gap: 1rem;
+    .text-container {
+      width: 100%;
+    }
+    .img-container {
+      width: 100%;
+    }
   }
 }

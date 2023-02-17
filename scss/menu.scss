@@ -1,40 +1,35 @@
 /* Subscription- Cards */
-.main-text-box {
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-  padding: 32px;
-  align-items: center;
-  text-align: center;
-
-  > h1 {
-    font-size: 32px;
-  }
-  > h2 {
-    font-size: 24px;
-  }
+.menu-title {
+  background-color: $background-grey;
 }
 .menu-grid {
   display: flex;
-  row-gap: 12px;
   padding: 32px;
+  background-color: $background-grey;
 
-  > .weekly-card {
-    padding: 32px;
-    display: flex;
+  > .weekly-card,
+  .daily-card {
+    padding: 12px;
+    border-radius: 8px;
 
-    > img .card-img-top {
-      border-radius: 8px 8px 0px 0px;
+    .card-img-container {
+      > .card-menu-img {
+        border-radius: 8px 8px 0px 0px;
+      }
     }
     > .card-body {
       display: flex;
       flex-direction: row;
       column-gap: 16px;
-      padding: 16px;
+      padding: 32px 16px 16px;
       border-radius: 0px 0px 8px 8px;
+      align-items: center;
+      justify-content: space-between;
+      background-color: white;
 
       > .card-text {
-        text-align: left;
+        @include typography-body;
+        align-items: center;
 
         h5 {
           @include typography-subtitleTwo;
@@ -44,8 +39,9 @@
           @include typography-body;
         }
       }
-      > .btn {
-        align-items: right;
+      > .add-btn {
+        @include add-button;
+        align-self: flex-end;
         height: fit-content;
       }
     }

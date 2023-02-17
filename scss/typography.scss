@@ -27,6 +27,37 @@
 
 @mixin typography-auxiliar {
   @include typography-base;
-  font-size: 0.8 rem;
+  font-size: 0.9rem;
   font-weight: normal;
+}
+@mixin cta-button {
+  $btn-bg-color: #ccd5ae;
+  $btn-text-color: #282828;
+  background-color: $btn-bg-color;
+  color: $btn-text-color;
+  border-color: darken($btn-bg-color, 5%);
+  &:hover {
+    background-color: darken($btn-bg-color, 5%);
+  }
+  &:focus {
+    background-color: darken($btn-bg-color, 10%);
+    color: $btn-text-color;
+    border-color: darken($btn-bg-color, 5%);
+  }
+}
+
+@mixin add-button {
+  $btn-bg-color: #ccd5ae;
+  $btn-text-color: #282828;
+  background-color: $btn-bg-color;
+  color: $btn-text-color;
+  border-color: darken($btn-bg-color, 5%);
+  &:hover {
+    background-color: darken($btn-bg-color, 5%);
+  }
+  &:focus {
+    background-color: darken($btn-bg-color, 10%);
+    color: $btn-text-color;
+    border-color: darken($btn-bg-color, 5%);
+  }
 }

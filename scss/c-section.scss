@@ -1,0 +1,31 @@
+.c-section {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  background-color: $background-grey;
+  > h1 {
+    @include typography-title;
+    text-align: center;
+  }
+  > .three-items {
+    display: flex;
+    column-gap: 32px;
+    > .item-one {
+      padding: 32px;
+      background: white;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 8px;
+      flex: 1;
+      // > .text-container {
+      // }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .three-items {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}

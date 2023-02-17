@@ -26,11 +26,9 @@
       display: flex;
       flex-direction: column;
       row-gap: 16px;
-      align-items: center;
+      flex: 1;
 
       > .img-container {
-        width: 100%;
-
         > img {
           width: 100%;
           height: auto;
@@ -40,8 +38,6 @@
         display: flex;
         flex-direction: column;
         row-gap: 8px;
-        width: 100%;
-        align-items: center;
 
         > h3 {
           @include typography-subtitleTwo;

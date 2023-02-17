@@ -1,0 +1,36 @@
+// A SECTION- General
+.home-header {
+  background-image: url(/img/home-bg-img.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  padding: 32px;
+  align-items: flex-start;
+  column-gap: 32px;
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    width: 50%;
+
+    h1 {
+      line-height: 42px;
+      @include typography-title;
+    }
+    p {
+      @include typography-body;
+    }
+    .cta {
+      @include cta-button;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .home-header {
+    padding: 150px 32px;
+  }
+}

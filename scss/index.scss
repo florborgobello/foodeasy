@@ -3,12 +3,34 @@
 @import "navbar.scss";
 @import "a-section";
 @import "b-section.scss";
-@import "section-three";
+@import "c-section";
 @import "footer";
 @import "menu.scss";
+@import "header.scss";
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.main-text-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 32px;
+  align-items: center;
+  text-align: center;
+
+  > h1 {
+    @include typography-title;
+  }
+
+  > h2 {
+    @include typography-subtitleTwo;
+  }
+}
+
+.carousel-main {
+  padding: 32px;
 }
