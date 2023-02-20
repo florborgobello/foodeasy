@@ -1,42 +1,31 @@
 /* NAVBAR*/
-body > nav.topNav {
-  background-color: antiquewhite;
-  padding: 32px;
-  display: flex;
-  flex-direction: row;
-}
-
-body > nav.topNav > ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: red;
-  width: 100%;
-}
-
-body > nav.topNav > ul > li {
-  list-style: none;
-  border-style: solid;
-}
-
-body > nav.topNav > ul > li > a {
-  text-decoration: none;
-}
-
-body > nav > button.sign-in {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: green;
-  width: 64px;
-}
-
 .navbar > .container-fluid {
   background-color: white;
 }
 
 .navbar-toggler {
   display: flex;
+}
+
+button.sign-in {
+  background-color: white;
+  color: #282828;
+  border-width: 3px;
+  border-color: #c1cc9d;
+}
+button.sign-in:hover {
+  background-color: #c1cc9d;
+  color: #282828;
+  border-color: #c1cc9d;
+}
+button.sign-in:focus {
+  background-color: #b7c48c;
+  color: #282828;
+  border-color: #c1cc9d;
+}
+
+.company-section {
+  background-color: #ccd5ae;
 }
 
 .a-section {
@@ -116,6 +105,9 @@ body > nav > button.sign-in {
   row-gap: 32px;
   text-align: center;
 }
+.b-section > .three-items-vert .img-container {
+  width: 600px;
+}
 
 .b-section {
   padding: 32px;
@@ -128,6 +120,7 @@ body > nav > button.sign-in {
   font-size: 2rem;
   font-weight: bold;
   text-align: center;
+  color: #f08923;
 }
 .b-section > .three-items,
 .b-section .three-items-vert {
@@ -385,6 +378,16 @@ footer > .copyright > p {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body .main-container {
+  max-width: 1280px;
+  width: 100%;
 }
 
 .main-text-box {

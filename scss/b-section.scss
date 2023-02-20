@@ -4,6 +4,9 @@
   flex-direction: column;
   row-gap: 32px;
   text-align: center;
+  .img-container {
+    width: 600px;
+  }
 }
 .b-section {
   padding: 32px;
@@ -14,6 +17,7 @@
   > h2 {
     @include typography-title;
     text-align: center;
+    color: #f08923;
   }
   > .three-items,
   .three-items-vert {

@@ -1,4 +1,7 @@
 // A SECTION- General
+.company-section {
+  background-color: $color-green;
+}
 .a-section {
   display: flex;
   flex-direction: row;
@@ -43,6 +46,7 @@
 
   .img-container {
     width: 50%;
+
     img {
       width: 100%;
       height: auto;

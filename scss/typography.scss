@@ -61,3 +61,21 @@
     border-color: darken($btn-bg-color, 5%);
   }
 }
+
+@mixin sign-btn {
+  background-color: white;
+  color: $btn-text-color;
+  border-width: 3px;
+  border-color: darken($color-green, 5%);
+
+  &:hover {
+    background-color: darken($color-green, 5%);
+    color: $btn-text-color;
+    border-color: darken($color-green, 5%);
+  }
+  &:focus {
+    background-color: darken($color-green, 10%);
+    color: $btn-text-color;
+    border-color: darken($color-green, 5%);
+  }
+}
