@@ -1,8 +1,4 @@
 /* NAVBAR*/
-.navbar > .container-fluid {
-  background-color: white;
-}
-
 .navbar-toggler {
   display: flex;
 }
@@ -272,6 +268,8 @@ footer > .copyright > p {
 .menu-grid .daily-card {
   padding: 12px;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
 }
 .menu-grid > .weekly-card .card-img-container > .card-menu-img,
 .menu-grid .daily-card .card-img-container > .card-menu-img {
@@ -282,9 +280,8 @@ footer > .copyright > p {
   display: flex;
   flex-direction: row;
   column-gap: 16px;
-  padding: 32px 16px 16px;
+  padding: 16px;
   border-radius: 0px 0px 8px 8px;
-  align-items: center;
   justify-content: space-between;
   background-color: white;
 }
@@ -307,6 +304,11 @@ footer > .copyright > p {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
 .menu-grid > .weekly-card > .card-body > .add-btn,
 .menu-grid .daily-card > .card-body > .add-btn {
@@ -382,11 +384,11 @@ footer > .copyright > p {
 
 body {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-body .main-container {
-  max-width: 1280px;
+body > * {
   width: 100%;
 }
 

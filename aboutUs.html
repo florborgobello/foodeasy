@@ -14,10 +14,10 @@
     <title>aboutUs</title>
   </head>
   <body>
-    <div class="main-container">
-      <!-- NAVBAR -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <!-- ABoutUs- Navbar -->
+    <div class="container px-0">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
           <a class="navbar-brand" href="index.html">
             <img
               src="img/logo.png"
@@ -41,10 +41,7 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="howItWorks.html"
+                <a class="nav-link" aria-current="page" href="howItWorks.html"
                   >How it works</a
                 >
               </li>
@@ -55,10 +52,13 @@
                 <a class="nav-link" href="dailyMenu.html">Daily menu</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="aboutUs.html">About us</a>
+                <a class="nav-link active" href="aboutUs.html">About us</a>
               </li>
             </ul>
-            <button type="button" class="btn btn-outline-primary ms-auto">
+            <button
+              type="button"
+              class="sign-in btn btn-outline-primary ms-auto"
+            >
               Sign In
             </button>
           </div>
@@ -109,7 +109,7 @@
               type="text"
               class="form-control"
               id="formGroupExampleInput"
-              placeholder="name"
+              placeholder="Type your name here"
             />
           </div>
 
@@ -121,7 +121,7 @@
               type="email"
               class="form-control"
               id="exampleFormControlInput1"
-              placeholder="name@example.com"
+              placeholder="email@example.com"
             />
           </div>
           <div class="mb-3">
@@ -131,6 +131,7 @@
             <textarea
               class="form-control"
               id="exampleFormControlTextarea1"
+              placeholder="Tell us something"
               rows="3"
             ></textarea>
           </div>
