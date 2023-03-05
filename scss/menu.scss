@@ -1,11 +1,11 @@
 /* Subscription- Cards */
 .menu-title {
-  background-color: $background-grey;
+  background-color: white;
 }
 .menu-grid {
   display: flex;
   padding: 32px;
-  background-color: $background-grey;
+  background-color: $background-floral;
 
   > .weekly-card,
   .daily-card {
@@ -21,9 +21,9 @@
     }
     > .card-body {
       display: flex;
-      flex-direction: row;
-      column-gap: 16px;
-      padding: 16px;
+      flex-direction: column;
+      row-gap: 8px;
+      padding: 16px 8px 8px 8px;
       border-radius: 0px 0px 8px 8px;
       justify-content: space-between;
       background-color: white;

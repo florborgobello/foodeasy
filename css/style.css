@@ -1,4 +1,3 @@
-/* NAVBAR*/
 .navbar-toggler {
   display: flex;
 }
@@ -10,13 +9,10 @@ button.sign-in {
   border-color: #c1cc9d;
 }
 button.sign-in:hover {
-  background-color: #c1cc9d;
-  color: #282828;
   border-color: #c1cc9d;
+  background-color: #c1cc9d;
 }
 button.sign-in:focus {
-  background-color: #b7c48c;
-  color: #282828;
   border-color: #c1cc9d;
 }
 
@@ -24,12 +20,16 @@ button.sign-in:focus {
   background-color: #ccd5ae;
 }
 
+.contact-section {
+  background-color: #faedcd;
+}
+
 .a-section {
   display: flex;
   flex-direction: row;
-  padding: 32px;
+  padding: 0px 0px 0px 32px;
   align-items: center;
-  column-gap: 32px;
+  column-gap: 16px;
 }
 .a-section .text-container {
   display: flex;
@@ -39,6 +39,7 @@ button.sign-in:focus {
 }
 .a-section .text-container h1 {
   line-height: 42px;
+  text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
@@ -85,13 +86,25 @@ button.sign-in:focus {
 
 @media (max-width: 768px) {
   .a-section {
+    padding: 16px 0px 0px 0px;
+    display: flex;
     flex-direction: column;
     row-gap: 1rem;
+    align-items: center;
   }
   .a-section .text-container {
+    padding: 16px;
+    width: 100%;
+  }
+  .a-section .text-container {
+    padding: 16px;
     width: 100%;
   }
   .a-section .img-container {
+    width: 100%;
+  }
+  .a-section .contact-img {
+    padding: 16px;
     width: 100%;
   }
 }
@@ -100,9 +113,6 @@ button.sign-in:focus {
   flex-direction: column;
   row-gap: 32px;
   text-align: center;
-}
-.b-section > .three-items-vert .img-container {
-  width: 600px;
 }
 
 .b-section {
@@ -126,7 +136,7 @@ button.sign-in:focus {
 }
 .b-section > .three-items > .item-one,
 .b-section .three-items-vert > .item-one {
-  padding: 32px;
+  padding: 0px;
   display: flex;
   flex-direction: column;
   row-gap: 16px;
@@ -159,6 +169,7 @@ button.sign-in:focus {
 }
 
 .c-section {
+  margin-top: 64px;
   padding: 32px;
   display: flex;
   flex-direction: column;
@@ -178,6 +189,9 @@ button.sign-in:focus {
 .c-section > .three-items > .item-one {
   padding: 32px;
   background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   border: 1px solid black;
   border-radius: 8px;
@@ -256,13 +270,13 @@ footer > .copyright > p {
 }
 /* Subscription- Cards */
 .menu-title {
-  background-color: #f2f0ec;
+  background-color: white;
 }
 
 .menu-grid {
   display: flex;
   padding: 32px;
-  background-color: #f2f0ec;
+  background-color: #fdf8ec;
 }
 .menu-grid > .weekly-card,
 .menu-grid .daily-card {
@@ -278,9 +292,9 @@ footer > .copyright > p {
 .menu-grid > .weekly-card > .card-body,
 .menu-grid .daily-card > .card-body {
   display: flex;
-  flex-direction: row;
-  column-gap: 16px;
-  padding: 16px;
+  flex-direction: column;
+  row-gap: 8px;
+  padding: 16px 8px 8px 8px;
   border-radius: 0px 0px 8px 8px;
   justify-content: space-between;
   background-color: white;
@@ -396,7 +410,7 @@ body > * {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
-  padding: 32px;
+  padding: 48px 132px 48px 132px;
   align-items: center;
   text-align: center;
 }
@@ -411,8 +425,10 @@ body > * {
   font-weight: normal;
 }
 
-.carousel-main {
-  padding: 32px;
+@media (max-width: 768px) {
+  .main-text-box {
+    padding: 16px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

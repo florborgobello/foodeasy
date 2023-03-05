@@ -2,12 +2,16 @@
 .company-section {
   background-color: $color-green;
 }
+
+.contact-section {
+  background-color: $background-papaya;
+}
 .a-section {
   display: flex;
   flex-direction: row;
-  padding: 32px;
+  padding: 0px 0px 0px 32px;
   align-items: center;
-  column-gap: 32px;
+  column-gap: 16px;
 
   .text-container {
     display: flex;
@@ -17,6 +21,7 @@
 
     h1 {
       line-height: 42px;
+      text-align: center;
       @include typography-title;
     }
     p {
@@ -27,7 +32,6 @@
     }
 
     // How it works- A section
-
     > ul.text-container-list {
       padding: 0;
       list-style: none;
@@ -43,7 +47,6 @@
     }
   }
   // Home- A section- company
-
   .img-container {
     width: 50%;
 
@@ -56,12 +59,26 @@
 
 @media (max-width: 768px) {
   .a-section {
+    padding: 16px 0px 0px 0px;
+    display: flex;
     flex-direction: column;
     row-gap: 1rem;
+    align-items: center;
+
     .text-container {
+      padding: 16px;
+      width: 100%;
+    }
+    .text-container {
+      padding: 16px;
       width: 100%;
     }
     .img-container {
+      width: 100%;
+    }
+
+    .contact-img {
+      padding: 16px;
       width: 100%;
     }
   }

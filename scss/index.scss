@@ -28,7 +28,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
-  padding: 32px;
+  padding: 48px 132px 48px 132px;
   align-items: center;
   text-align: center;
 
@@ -40,7 +40,8 @@ body {
     @include typography-subtitleTwo;
   }
 }
-
-.carousel-main {
-  padding: 32px;
+@media (max-width: 768px) {
+  .main-text-box {
+    padding: 16px;
+  }
 }
