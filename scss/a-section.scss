@@ -32,6 +32,7 @@
     }
 
     // How it works- A section
+
     > ul.text-container-list {
       padding: 0;
       list-style: none;
@@ -46,6 +47,7 @@
       }
     }
   }
+
   // Home- A section- company
   .img-container {
     width: 50%;
@@ -55,6 +57,11 @@
       height: auto;
     }
   }
+}
+
+// About us/ Contact section
+.contact-section {
+  padding: 32px;
 }
 
 @media (max-width: 768px) {
